@@ -1,0 +1,34 @@
+application:
+  name: TradeWatch
+  environment: development
+  timezone: Asia/Kolkata
+
+watchlist:
+  symbols:
+    - RELIANCE.NS
+    - TCS.NS
+    - INFY.NS
+
+strategy:
+  timeframe: 15m
+  ema_fast: 9
+  ema_slow: 21
+  atr_period: 14
+
+polling:
+  interval_seconds: 60
+
+telegram:
+  enabled: false
+  bot_token: replace-with-telegram-bot-token
+  chat_id: replace-with-telegram-chat-id
+
+logging:
+  level: INFO
+  directory: logs
+  filename: tradewatch.log
+  max_file_size_mb: 10
+  backup_count: 5
+
+database:
+  url: sqlite:///tradewatch.db
