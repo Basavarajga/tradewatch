@@ -5,3 +5,4 @@ mypy>=1.11,<2.0
 pytest>=8.3,<9.0
 ruff>=0.6,<1.0
 types-PyYAML>=6.0.12,<7.0
+pandas-stubs>=2.2,<3.0
